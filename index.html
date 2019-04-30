@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Primary title
+          </h1>
+          <h2 class="subtitle">
+            Primary subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      
+      
+
+      <div class="columns">
+        <div class="column">
+          <label for="">Ilosc</label>
+          <input type="number" value="0" id="input1" class="input is-primary" />
+        </div>
+        <div class="column">
+          <label for="">Cena</label>
+
+          <div class="control">
+            <div class="select">
+              <select id="sel">
+                <option value="2.5">2.5</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <label for="">Kwota</label>
+          <input
+            type="number"
+            value="0"
+            id="moneyGet"
+            class="input is-primary"
+          />
+        </div>
+        <div class="column btn-column">
+            <a class="button">Zatwierdź</a>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div id="divek">Do zapłaty</div>
+        </div>
+        <div class="column" id="reszta">Reszta</div>
+      </div>
+
+      <progress class="progress" value="15" max="100">15%</progress>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
