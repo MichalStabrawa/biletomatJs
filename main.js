@@ -9,13 +9,13 @@
 function getVal() {
   let selectVal=document.querySelector('select').value;
   console.log(selectVal);
-  let inputVal=document.querySelector('input').value
+  let inputVal=document.getElementById('input1').value;
   let inputP=parseInt(inputVal);
-  console.log(typeof inputP);
-  console.log(inputVal);
+  
+  console.log("Ilość:" +""+inputP);
  let text= document.getElementById('divek');
  if(inputP>0 ){
-  text.innerHTML="Do zapłaty"+" "+selectVal*inputP;
+  text.innerHTML="Do zapłaty"+" "+selectVal*inputP + "PLN";
  }else {
   text.innerHTML='wybierz ilośc biletów';
  }
@@ -24,9 +24,9 @@ function getVal() {
  const wartosc = selectVal*inputP;
 
  if(moneyValue()>=selectVal*inputP){
-  document.getElementById('reszta').innerHTML= "reszta"+" "+ (reszta-wartosc);
+  document.getElementById('reszta').innerHTML= "reszta"+" "+ (reszta-wartosc)+"PLN";
  }else {
-   alert('Brakuje jeszcze'+ " "+(wartosc-reszta));
+   alert('Brakuje jeszcze'+ " "+(wartosc-reszta) +"PLN");
  }
  
 

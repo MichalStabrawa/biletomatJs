@@ -2,3 +2,6 @@
     display: flex;
     align-items: flex-end;
 }
+.container {
+    padding-top: 50px;
+}
