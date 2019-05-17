@@ -28,45 +28,123 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <label for="">Ilosc</label>
-          <input type="number" value="0" id="input1" class="input is-primary" />
+    <section class="section">
+      <div class="container">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="answer" id="inputNormal" value="1" />
+            BILET NORMALNY
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer" id="inputTwo" value="2" />
+            BILET ULGOWY
+          </label>
         </div>
-        <div class="column">
-          <label for="">Cena</label>
+        <div class="columns">
+          <div class="column">
+            <label for="">Ilosc</label>
+            <input
+              type="number"
+              value="0"
+              id="input1"
+              class="input is-primary"
+            />
+          </div>
+          <div class="column">
+            <label for="">Cena</label>
 
-          <div class="control">
-            <div class="select">
-              <select id="sel">
-                <option value="2.5">2.5</option>
-                <option value="4">4</option>
-              </select>
+            <div class="control">
+              <div class="select">
+                <select id="sel"> </select>
+              </div>
             </div>
           </div>
+          <div class="column">
+            <label for="">Kwota</label>
+            <input
+              type="number"
+              value="0"
+              id="moneyGet"
+              class="input is-primary"
+            />
+          </div>
+          <div class="column btn-column">
+            <a class="button is-primary">Zatwierdź</a>
+          </div>
         </div>
-        <div class="column">
-          <label for="">Kwota</label>
-          <input
-            type="number"
-            value="0"
-            id="moneyGet"
-            class="input is-primary"
-          />
-        </div>
-        <div class="column btn-column">
-          <a class="button is-primary">Zatwierdź</a>
-        </div>
-      </div>
 
-      <div class="columns">
-        <div class="column">
-          <div id="divek">Do zapłaty</div>
+        <div class="columns">
+          <div class="column">
+            <div id="divek" class="is-size-5">Do zapłaty</div>
+          </div>
+          <div class="column is-size-5 has-text-success" id="reszta">
+            Reszta
+          </div>
         </div>
-        <div class="column" id="reszta">Reszta</div>
       </div>
-    </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Rodzaje biletów</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>,
+          like the one you're currently reading
+        </h2>
+        <div
+          class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+        >
+          <div class="column">
+            ULGOWY 1.8PLN
+          </div>
+          <div class="column">
+            ULGOWY 2.8PLN
+          </div>
+          <div class="column">
+            Column
+          </div>
+          <div class="column">
+            Column
+          </div>
+          <div class="column">
+            Column
+          </div>
+          <div class="column">
+            Column
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>BiletomatApp</strong> by
+          <a href="https://jgthms.com">M.Stabrawa</a>. The source code is
+          licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+          website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <nav>
+      <ul>
+        <li id="menu2">
+          oferta
+          <ul id="ham">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
