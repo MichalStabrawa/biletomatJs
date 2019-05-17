@@ -30,17 +30,16 @@
     </section>
     <section class="section">
       <div class="container">
-        
-<div class="control">
-    <label class="radio">
-      <input type="radio" name="answer">
-      BILET NORMALNY
-    </label>
-    <label class="radio">
-      <input type="radio" name="answer">
-     BILET ULGOWY
-    </label>
-  </div>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="answer" id="inputNormal" value="1" />
+            BILET NORMALNY
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer" id="inputTwo" value="2" />
+            BILET ULGOWY
+          </label>
+        </div>
         <div class="columns">
           <div class="column">
             <label for="">Ilosc</label>
@@ -56,10 +55,7 @@
 
             <div class="control">
               <div class="select">
-                <select id="sel">
-                  <option value="2.5">2.5</option>
-                  <option value="4">4</option>
-                </select>
+                <select id="sel"> </select>
               </div>
             </div>
           </div>
@@ -121,15 +117,34 @@
     </section>
 
     <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>BiletomatApp</strong> by <a href="https://jgthms.com">M.Stabrawa</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-          </p>
-        </div>
-      </footer>
-      <script src="data.js"></script>
+      <div class="content has-text-centered">
+        <p>
+          <strong>BiletomatApp</strong> by
+          <a href="https://jgthms.com">M.Stabrawa</a>. The source code is
+          licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+          website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <nav>
+      <ul>
+        <li id="menu2">
+          oferta
+          <ul id="ham">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
